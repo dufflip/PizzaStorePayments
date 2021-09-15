@@ -64,13 +64,13 @@
   font-size: 1rem;
   padding: 1rem 4rem;
   border: none;
-  background: #e31837;
+  background: var(--cor-secundaria);
   color: #fff;
   transition: 0.2 ease-out;
 }
 
 .ProductButton:hover {
-  background: #ffc500;
+  background: var(--cor-principal);
   transition: 0.2s ease-out;
   cursor: pointer;
   color: #000;

@@ -11,22 +11,21 @@ const FinalStep = () => {
   return (
     <>
       <section className="section-final-step">
-        <div>
+        <div className="fat-final-step">
           <h2>Local de Faturamento</h2>
           <CEPFaturamento />
         </div>
-        <div>
+        <div className="env-final-step">
           <h2>Local de Envio</h2>
           <CEPEnvio />
         </div>
-        <div>
-          <h2>Produtos</h2>
-          <CartProductsPayment className="cart-final-step" />
-        </div>
       </section>
-      <Link to="/fourth-step">
+      <div className="products-final-step">
+        <CartProductsPayment className="cart-final-step" />
+      </div>
+      {/* <Link to="/fourth-step">
         <Back />
-      </Link>
+      </Link> */}
     </>
   );
 };

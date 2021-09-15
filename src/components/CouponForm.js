@@ -35,7 +35,7 @@ const CouponForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="form-input-FTS" onSubmit={handleSubmit}>
       <Coupom />
       <input
         disabled={loading}
@@ -44,7 +44,7 @@ const CouponForm = () => {
         onChange={(e) => updateState({ input: e.target.value })}
       />
       <button disabled={loading} type="submit">
-        Validar Cupom
+        Validar
       </button>
       {error && <small style={{ color: "tomato" }}>{error}</small>}
     </form>

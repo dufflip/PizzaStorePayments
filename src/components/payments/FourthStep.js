@@ -37,9 +37,21 @@ class FourthStep extends Component {
       <>
         <div className="container-FS">
           <ul className="stages-FS">
-            <li className="stage-FS">1</li>
-            <li className="stage-SS">2</li>
-            <li className="stage-SS">3</li>
+            <li className="stage-FS">
+              <Link className="link-nav" to="/first-step">
+                1
+              </Link>
+            </li>
+            <li className="stage-SS">
+              <Link className="link-nav" to="/second-step">
+                2
+              </Link>
+            </li>
+            <li className="stage-SS">
+              <Link className="link-nav" to="/third-step">
+                3
+              </Link>
+            </li>
             <li className="stage-FTS">4</li>
           </ul>
         </div>
@@ -60,6 +72,7 @@ class FourthStep extends Component {
                         name="react-tips"
                         value="option1"
                         checked={this.state.selectedOption === "option1"}
+                        fu0
                         onChange={this.handleOptionChange}
                         className="form-check-input"
                       />
@@ -104,9 +117,9 @@ class FourthStep extends Component {
             </div>
           </div>
           <CartProductsPayment className="products-FTS" />
-          <Link to="/third-step">
+          {/* <Link to="/third-step">
             <Back />
-          </Link>
+          </Link> */}
         </section>
       </>
     );

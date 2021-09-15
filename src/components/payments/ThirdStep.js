@@ -55,10 +55,18 @@ const ThirdStep = () => {
     <>
       <div className="container-FS">
         <ul className="stages-FS">
-          <li className="stage-FS">1</li>
-          <li className="stage-SS">2</li>
+          <li className="stage-FS">
+            <Link className="link-nav" to="/first-step">
+              1
+            </Link>
+          </li>
+          <li className="stage-SS">
+            <Link className="link-nav" to="/second-step">
+              2
+            </Link>
+          </li>
           <li className="stage-SS">3</li>
-          <li>4</li>
+          <li className="final-stage-grey-FS">4</li>
         </ul>
       </div>
       <div className="container-SS">
@@ -141,19 +149,21 @@ const ThirdStep = () => {
               </div>
             </div>
           </main>
-          <button
-            className="button-SS"
-            onClick={() => dispatch(ACTION_envios({ ...state }))}
-          >
-            <Link className="button-link-SS" to="/fourth-step">
-              Checkout
-            </Link>
-          </button>
+          <div className="div-button-SS">
+            <button
+              className="button-SS"
+              onClick={() => dispatch(ACTION_envios({ ...state }))}
+            >
+              <Link className="button-link-SS" to="/fourth-step">
+                Next Step
+              </Link>
+            </button>
+          </div>
         </form>
       </div>
-      <Link to="/second-step">
+      {/* <Link to="/second-step">
         <Back />
-      </Link>
+      </Link> */}
     </>
   );
 };

@@ -14,10 +14,10 @@ const FirstStep = () => {
           <li className="stage-FS">1</li>
           <li>2</li>
           <li>3</li>
-          <li>4</li>
+          <li className="final-stage-grey-FS">4</li>
         </ul>
       </div>
-      <CartProductsPayment />
+      <CartProductsPayment className="container-products-FS" />
       <Link to="/">
         <Back />
       </Link>

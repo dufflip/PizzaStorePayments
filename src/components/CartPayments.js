@@ -71,7 +71,7 @@ const CartProductsPayment = ({ className }) => {
             className="button-CART-Pay"
             disabled={hasProducts ? "" : "disabled"}
           >
-            Checkout
+            Next Step
           </Link>
         </div>
       </section>

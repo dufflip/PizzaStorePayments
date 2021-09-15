@@ -1,6 +1,10 @@
+.smal-FS {
+  display: none;
+}
+
 .stage-SS {
   color: #fff;
-  background: #ffc500 !important;
+  background: var(--cor-principal) !important;
 }
 
 .inputbox-SS .label-SS {
@@ -98,7 +102,7 @@
 }
 
 .button-SS {
-  background: #ffc500;
+  background: var(--cor-principal);
   border-radius: 20px;
   border: none;
   padding: 5px 20px;
@@ -111,10 +115,58 @@
 .button-SS:hover {
   transition: 0.2s ease-out;
   color: #fff;
-  background: #e31837;
+  background: var(--cor-secundaria);
 }
 
 .button-link-SS {
   color: #fff;
   text-decoration: none;
+}
+
+/* 769px — 1024px: Small screens, laptops */
+
+@media (max-width: 1024px) {
+  .row-SS {
+    width: 500px;
+  }
+}
+
+/* 481px — 768px: iPads, Tablets */
+
+@media (max-width: 768px) {
+  .container-SS {
+    align-items: unset;
+    margin-bottom: 0;
+  }
+
+  .title {
+    font-size: 35px;
+  }
+
+  .main-SS {
+    align-items: center;
+    padding-top: 0;
+  }
+
+  .row-SS {
+    grid-template-columns: unset;
+    width: 350px;
+  }
+
+  .div-button-SS {
+    text-align: center;
+    padding-top: 15px;
+  }
+}
+
+/* 320px — 480px: Mobile devices */
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 20px;
+  }
+
+  .row-SS {
+    width: 300px;
+  }
 }

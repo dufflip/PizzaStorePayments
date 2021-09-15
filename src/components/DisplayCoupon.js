@@ -7,9 +7,13 @@ const DisplayCoupon = () => {
   const coupon = useSelector((state) => state.cart.coupon);
 
   return coupon.label ? (
-    <h4>
+    <h4 className="discount-coupon">
       {coupon.label} - {coupon.discount}%
-      <button type="button" onClick={(e) => dispatch(ACTION_remove_coupon())}>
+      <button
+        className="discount-coupon-button"
+        type="button"
+        onClick={(e) => dispatch(ACTION_remove_coupon())}
+      >
         X
       </button>
     </h4>

@@ -27,7 +27,7 @@
 }
 
 .section-CT .button-CT {
-  background: #ffc500;
+  background: var(--cor-principal);
   color: #000;
   border: none;
   transition: 0.2 ease-out;
@@ -39,7 +39,7 @@
 .section-CT .button-CT:hover {
   transition: 0.2s ease-out;
   color: #fff;
-  background: #e31837;
+  background: var(--cor-secundaria);
 }
 
 .delete-button-FS {

@@ -17,8 +17,18 @@
 
 .container-FS .stages-FS .stage-FS {
   color: #fff;
-  background: #ffc500;
+  background: var(--cor-principal);
   border-bottom-left-radius: 15px;
+}
+
+.final-stage-grey-FS {
+  background: rgb(36, 36, 36) !important;
+  border-top-right-radius: 15px;
+}
+
+.link-nav {
+  color: #fff;
+  text-decoration: none;
 }
 
 .section-CART-Pay {
@@ -46,7 +56,7 @@
 }
 
 .button-CART-Pay {
-  background: #ffc500;
+  background: var(--cor-principal);
   border-radius: 20px;
   border: none;
   padding: 5px 20px;
@@ -59,11 +69,42 @@
 
 .button-CART-Pay:hover {
   color: #fff;
-  background: #e31837;
+  background: var(--cor-secundaria);
 }
 
 .delete-button-FS-CART-Pay {
   background: none;
   border: none;
   cursor: pointer;
+  color: #fff;
+}
+
+.BG {
+  background-image: url(../images/payment-wallpaper.jpg);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+}
+
+/* 769px — 1024px: Small screens, laptops */
+
+@media (max-width: 1024px) {
+  .container-FS .stages-FS li {
+    padding: 15px 80px;
+  }
+}
+
+/* 481px — 768px: iPads, Tablets */
+
+@media (max-width: 768px) {
+  .container-FS .stages-FS li {
+    padding: 15px 50px;
+  }
+}
+
+/* 320px — 480px: Mobile devices */
+
+@media (max-width: 480px) {
+  .container-FS .stages-FS li {
+    padding: 15px 35px;
+  }
 }

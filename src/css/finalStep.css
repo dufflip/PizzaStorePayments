@@ -1,14 +1,44 @@
 .section-final-step {
-  text-align: center;
   padding-top: 200px;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.products-final-step {
+  padding-top: 50px;
   color: #fff;
 }
 
-.cart-final-step .section-FS .div-FS h2 {
-  display: none;
-  color: #fff;
+.section-final-step div h2 {
+  font-weight: 300;
+  padding-bottom: 25px;
 }
 
 .cart-final-step .button-CART-Pay {
   display: none;
+}
+y .cart-final-step .div-CART-Pay {
+  padding: unset;
+}
+
+.section-final-step ul,
+.section-final-step li {
+  list-style: none;
+}
+
+/* 769px — 1024px: Small screens, laptops */
+
+@media (max-width: 1024px) {
+  .section-final-step {
+    padding-top: 150px;
+    text-align: center;
+  }
+
+  .fat-final-step {
+  }
 }

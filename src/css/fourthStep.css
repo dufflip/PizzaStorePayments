@@ -1,6 +1,6 @@
 .stage-FTS {
   color: #fff;
-  background: #ffc500 !important;
+  background: var(--cor-principal) !important;
   border-top-right-radius: 15px;
 }
 
@@ -13,6 +13,28 @@
 .cupom-FTS h2 {
   font-weight: 500;
   color: #fff;
+  padding-bottom: 50px;
+}
+
+.form-input-FTS svg {
+  position: relative;
+  top: 4px;
+}
+
+.form-input-FTS input {
+  border-radius: 10px;
+  margin: 0 15px;
+}
+
+.form-input-FTS button {
+  background: var(--cor-principal);
+  border-radius: 20px;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: 0.2s ease-out;
+  text-decoration: none;
+  font-size: 15px;
 }
 
 .cupom-FTS ul {
@@ -27,12 +49,7 @@
 }
 
 .section-FTS {
-  position: relative;
-  padding: 25px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  padding-left: 325px;
+  text-align: center;
 }
 
 .section-FTS h3 {
@@ -68,10 +85,23 @@
 
 .products-FTS {
   position: absolute;
-  top: 10%;
-  right: 5%;
+  bottom: 10%;
+  left: 5%;
   background: rgba(236, 236, 236, 0.185);
   border-radius: 20px;
+}
+
+.products-FTS .section-CART-Pay {
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.products-FTS .delete-button-FS-CART-Pay {
+  display: none;
+}
+
+.products-FTS .button-CART-Pay {
+  display: none;
 }
 
 .products-FTS .button-FS {
@@ -80,4 +110,16 @@
 
 .products-FTS .section-FS {
   margin-bottom: unset;
+}
+
+/* 769px — 1024px: Small screens, laptops */
+
+@media (max-width: 1024px) {
+  .products-FTS {
+    position: unset;
+  }
+
+  .products-FTS .section-CART-Pay {
+    text-align: center;
+  }
 }

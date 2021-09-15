@@ -38,7 +38,7 @@
   font-size: 1.4rem;
   padding: 0.6rem 3rem;
   border: none;
-  background: #ffc500;
+  background: var(--cor-principal);
   color: #000;
   transition: 0.2s ease-out;
   z-index: 2;
@@ -46,7 +46,7 @@
 
 .FeatureButton:hover {
   color: #fff;
-  background: #e31837;
+  background: var(--cor-secundaria);
   transition: 0.2s ease-out;
   cursor: pointer;
 }
